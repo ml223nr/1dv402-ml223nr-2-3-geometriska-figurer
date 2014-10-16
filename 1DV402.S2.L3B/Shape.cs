@@ -55,16 +55,16 @@ namespace _1DV402.S2.L3B
             if (that == null)
                 throw new ArgumentException("Objektet är inte en Shape.");
 
-            //if (this.Area > other.Area)
+            //if (that.Area > this.Area)
             //    return -1;
 
-            //if (this.Area < other.Area)
+            //if (that.Area < this.Area)
             //    return 2;
 
             //if (this == obj)
             //    return 0;
 
-            return that.Area.CompareTo(this.Area);  
+            return this.Area.CompareTo(that.Area);  
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace _1DV402.S2.L3B
                                     Length.ToString("0.0").PadLeft(8), 
                                     Width.ToString("0.0").PadLeft(8), 
                                     Perimeter.ToString("0.0").PadLeft(9), 
-                                    Area.ToString("00.0").PadLeft(8));
+                                    Area.ToString("0.0").PadLeft(8));
         } 
 
         //konstruktor

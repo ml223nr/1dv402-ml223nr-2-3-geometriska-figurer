@@ -43,11 +43,11 @@ namespace _1DV402.S2.L3B
         {
             int shapeTypeLength = Enum.GetValues(typeof(ShapeType)).Length;
 
-            int maxNumberOfShapes = 20;
-            int minNumberOfShapes = 5;
+            const int maxNumberOfShapes = 20;
+            const int minNumberOfShapes = 5;
 
-            int maxMeasure = 100;
-            int minMeasure = 5;
+            const int maxMeasure = 100;
+            const int minMeasure = 5;
 
             int numberOfShapes = random.Next(minNumberOfShapes, maxNumberOfShapes+1);
             
